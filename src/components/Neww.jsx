@@ -16,14 +16,15 @@ const RepoModal = ({ isOpen, onClose, onCreate }) => {
       <div className='modal-background' onClick={onClose}></div>
       <div className='modal-content'>
         <div className='box'>
-          <h2>Create New Repo</h2>
+          <h2 className='box-name'>Create New Repo</h2>
           <label>
             Repo Name:
             <input
               type='text'
               value={repoName}
               onChange={(e) => setRepoName(e.target.value)}
-            />
+            />{" "}
+            <br />
           </label>
           <label>
             Description:
@@ -33,7 +34,11 @@ const RepoModal = ({ isOpen, onClose, onCreate }) => {
               onChange={(e) => setRepoDescription(e.target.value)}
             />
           </label>
-          <button onClick={handleCreate}>Create Repo</button>
+          <br />
+          <br />
+          <button className='create' onClick={handleCreate}>
+            Click To Create New Repo
+          </button>
         </div>
       </div>
       <button className='modal-close is-large' onClick={onClose}></button>
