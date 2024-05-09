@@ -61,7 +61,7 @@ function RepoDetails() {
             `none`
           ) : (
             <a href={`https://codekazuki.github.io/${details.name}`}>
-              mbonamensa.github.io/{details.name}
+              codekazuki.github.io/{details.name}
             </a>
           )}
         </p>
