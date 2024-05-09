@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className='navbar'>
       <FaGithub className='github-icon' />
-      <h1>Kazuki's GitHub Repos</h1>
+      <h1>Kazuki`s GitHub Repos</h1>
     </div>
   );
 }

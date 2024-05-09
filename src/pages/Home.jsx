@@ -47,6 +47,7 @@ function Home() {
 
   return (
     <>
+      <div></div>
       <section className='repo-container'>{userElements}</section>
       <p className='view-more' onClick={viewMore}>
         {showViewMore}
