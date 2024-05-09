@@ -76,10 +76,14 @@ const Repo = ({ name, description, onUpdate, onDelete }) => {
       ) : (
         <section className='repo-container'>
           <div className='repo-card'>
-            <h3>{name}</h3>
-            <p>{description}</p>
-            <button onClick={() => setIsEditing(true)}>Edit</button>
-            <button onClick={onDelete}>Delete</button>
+            <h3 className='repo-name'>{name}</h3>
+            <p className='rrepodetail'>{description}</p>
+            <button className='edit' onClick={() => setIsEditing(true)}>
+              Edit
+            </button>
+            <button className='delete' onClick={onDelete}>
+              Delete
+            </button>
           </div>
         </section>
       )}

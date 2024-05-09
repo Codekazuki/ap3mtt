@@ -89,11 +89,25 @@ a:hover {
   margin: 0 auto;
   margin-bottom: 50px;
 }
+.rrepodetail {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
 
 #repodetail p {
   padding: 15px 0;
   word-break: break-all;
   color: rgb(230, 230, 230);
+}
+.edit {
+  margin-right: 12px;
+  padding: 2px 8px;
+}
+.delete {
+  margin-right: 12px;
+  padding: 2px 8px;
 }
 
 .repo-mini-details {
