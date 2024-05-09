@@ -144,3 +144,19 @@ a:hover {
     font-size: 2rem;
   }
 }
+.box {
+  color: rgb(0, 225, 255);
+}
+.button1 {
+  padding: 1rem;
+  background-color: grey;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: xx-large;
+}
+.new-repo {
+  border: 1px solid #1b9aaa;
+  padding: 13px;
+  border-radius: 5px;
+}

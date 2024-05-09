@@ -6,7 +6,6 @@ const RepoModal = ({ isOpen, onClose, onCreate }) => {
   const [repoDescription, setRepoDescription] = useState("");
 
   const handleCreate = () => {
-    // Perform validation if needed
     onCreate(repoName, repoDescription);
     setRepoName("");
     setRepoDescription("");
@@ -75,12 +74,14 @@ const Repo = ({ name, description, onUpdate, onDelete }) => {
           <button onClick={handleUpdate}>Save</button>
         </>
       ) : (
-        <>
-          <h3>{name}</h3>
-          <p>{description}</p>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
-          <button onClick={onDelete}>Delete</button>
-        </>
+        <section className='repo-container'>
+          <div className='repo-card'>
+            <h3>{name}</h3>
+            <p>{description}</p>
+            <button onClick={() => setIsEditing(true)}>Edit</button>
+            <button onClick={onDelete}>Delete</button>
+          </div>
+        </section>
       )}
     </div>
   );
@@ -116,7 +117,9 @@ const Neww = () => {
 
   return (
     <div>
-      <button onClick={() => setIsModalOpen(true)}>Create Repo</button>
+      <button className='button1' onClick={() => setIsModalOpen(true)}>
+        Create New Repository
+      </button>
       <RepoModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
