@@ -21,7 +21,7 @@ Details Page
 
 ### Links
 
-- Live Site URL: [Kazuki github's GitHub]()
+- Live Site URL: [Kazuki github's GitHub](https://coachkazuki3mttaltport.netlify.app/)
 
 ## My process
 
