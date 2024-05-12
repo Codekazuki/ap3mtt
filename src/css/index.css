@@ -139,7 +139,7 @@ input {
 }
 
 .icons {
-  color: #1b9aaa;
+  color: #2aa2b1;
 }
 
 .error-page {
@@ -178,7 +178,7 @@ input {
 }
 .button1 {
   padding: 1rem;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.868);
   outline: none;
   border: none;
   border-radius: 10px;
